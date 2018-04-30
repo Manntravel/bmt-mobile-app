@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle" >
+            <solid android:color="@color/color_mytrip_list_pay_bt" ></solid>
+            <corners android:radius="12dp"></corners>
+
+            <padding android:bottom="2dp"
+                android:left="8dp"
+                android:right="8dp"
+                android:top="2dp"></padding>
+        </shape>
+
+    </item>
+
+</layer-list>

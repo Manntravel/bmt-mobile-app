@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.rezofy.views.activities.WeatherActivity"
+    android:background="@drawable/weather">
+
+   <!--    <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <include
+               android:id="@+id/header"
+               layout="@layout/header_layout"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_below="@+id/header"
+               android:weightSum="100"
+               android:orientation="vertical"
+               >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="40"
+                   android:layout_margin="@dimen/padding_10"
+                   android:orientation="vertical"
+                   android:weightSum="100">
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="70">
+
+                       <RelativeLayout
+                           android:id="@+id/rl_place"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           >
+
+                           <TextView
+                               android:id="@+id/tv_city_name"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="Berlin"
+                               android:textSize="22sp"/>
+
+                           <TextView
+                               android:id="@+id/tv_country_name"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_below="@id/tv_city_name"
+                               android:text="Germany"/>
+
+                       </RelativeLayout>
+
+                       <RelativeLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_below="@+id/rl_place"
+                           android:layout_marginTop="@dimen/padding_10">
+
+                           <TextView
+                               android:id="@+id/tv_time"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="15:46"
+                               android:textSize="22sp"/>
+
+                           <TextView
+                               android:id="@+id/tv_date"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_below="@id/tv_time"
+                               android:text="Mon, 16 March"
+                               android:textSize="14sp"/>
+
+                       </RelativeLayout>
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_alignParentRight="true"
+                           android:orientation="horizontal">
+
+                           <TextView
+                               android:id="@+id/tv_temperature"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="7"
+                               android:textSize ="90sp"/>
+
+                           <com.rezofy.views.custom_views.IconTextView
+                               android:id="@+id/itv_tempicon"
+                               android:layout_width="wrap_content"
+                               android:layout_height="match_parent"
+                               android:layout_marginTop="20dp"
+                               android:gravity="top"
+                               android:text="@string/icon_text_K"
+                               android:textSize="20sp"/>
+
+                       </LinearLayout>
+
+                   </RelativeLayout>
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="30">
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:orientation="vertical">
+
+                           <com.rezofy.views.custom_views.IconTextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="@string/icon_text_K"
+                               android:textSize="22sp"/>
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_below="@id/tv_time"
+                               android:layout_marginTop="@dimen/margin_5dp"
+                               android:text="Cloudiness"
+                               android:textSize="14sp"/>
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:orientation="vertical">
+
+                           <com.rezofy.views.custom_views.IconTextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="@string/icon_text_K"
+                               android:textSize="22sp"/>
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_below="@id/tv_time"
+                               android:layout_marginTop="@dimen/margin_5dp"
+                               android:text="Cloudiness"
+                               android:textSize="14sp"/>
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_toLeftOf="@+id/ll_humidity"
+                           android:layout_marginRight="@dimen/padding_10"
+                           android:gravity="center"
+                           android:orientation="vertical">
+
+                           <com.rezofy.views.custom_views.IconTextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="@string/icon_text_K"
+                               android:textSize="22sp"/>
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_below="@id/tv_time"
+                               android:layout_marginTop="@dimen/margin_5dp"
+                               android:text="10 cm"
+                               android:textSize="14sp"/>
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:id="@+id/ll_humidity"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_toLeftOf="@+id/ll_rainfall"
+                           android:layout_marginRight="@dimen/padding_10"
+                           android:gravity="center"
+                           android:orientation="vertical">
+
+                           <com.rezofy.views.custom_views.IconTextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="@string/icon_text_K"
+                               android:textSize="22sp"/>
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_below="@id/tv_time"
+                               android:layout_marginTop="@dimen/margin_5dp"
+                               android:text="70%"
+                               android:textSize="14sp"/>
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:id="@+id/ll_rainfall"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_alignParentRight="true"
+                           android:gravity="center"
+                           android:orientation="vertical">
+
+                           <com.rezofy.views.custom_views.IconTextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="@string/icon_text_K"
+                               android:textSize="22sp"/>
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_below="@id/tv_time"
+                               android:layout_marginTop="@dimen/margin_5dp"
+                               android:text="0.04 cm"
+                               android:textSize="14sp"/>
+
+                       </LinearLayout>
+
+                   </RelativeLayout>
+
+
+               </LinearLayout>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@color/red_first"
+                   />
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="59"
+                   android:layout_margin="@dimen/padding_10"
+                   android:orientation="vertical">
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:orientation="vertical">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="@string/temperature"
+                               android:textAllCaps="true"/>
+
+                           <View
+                               android:layout_width="match_parent"
+                               android:layout_height="1dp"
+                               android:layout_marginTop="@dimen/padding_5"
+                               android:background="@color/red_first"/>
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_centerInParent="true"
+                           android:orientation="vertical">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="@string/real_feel"
+                               android:textAllCaps="true"/>
+
+                           <View
+                               android:layout_width="match_parent"
+                               android:layout_height="1dp"
+                               android:layout_marginTop="@dimen/padding_5"
+                               android:background="@color/red_first"/>
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_alignParentRight="true"
+                           android:orientation="vertical">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="@string/precipitation"
+                               android:textAllCaps="true"/>
+
+                           <View
+                               android:layout_width="match_parent"
+                               android:layout_height="1dp"
+                               android:layout_marginTop="@dimen/padding_5"
+                               android:background="@color/red_first"/>
+
+                       </LinearLayout>
+
+
+                   </RelativeLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/padding_10"
+                       android:gravity="center"
+                       android:orientation="horizontal"
+                       android:weightSum="100">
+
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="15"
+                           android:gravity="center"
+                           android:orientation="vertical">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="now"/>
+
+                           <com.rezofy.views.custom_views.IconTextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginTop="@dimen/padding_5"
+                               android:layout_gravity="center"
+                               android:text="@string/icon_text_K"/>
+
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginTop="@dimen/padding_5"
+                               android:layout_alignParentRight="true"
+                               android:orientation="horizontal">
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="7"
+                                   android:textSize ="20sp"/>
+
+                               <com.rezofy.views.custom_views.IconTextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:gravity="top"
+                                   android:text="@string/icon_text_K"
+                                   android:textSize="15sp"/>
+
+                           </LinearLayout>
+
+
+                           <RelativeLayout
+                               android:layout_width="20dp"
+                               android:layout_height="20dp"
+                               android:layout_marginTop="@dimen/padding_5">
+
+                               <com.rezofy.views.custom_views.IconTextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:gravity="top"
+                                   android:text="@string/icon_text_K"
+                                   android:textSize="20sp"/>
+
+                           </RelativeLayout>
+
+
+                       </LinearLayout>
+
+                       <View
+                           android:layout_width="1dp"
+                           android:layout_height="match_parent"
+                           android:background="@color/red_first"
+                           android:layout_marginTop="15dp"
+                           android:layout_marginBottom="15dp"/>
+
+
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="15"
+                           android:gravity="center"
+                           android:orientation="vertical">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="now"/>
+
+                           <com.rezofy.views.custom_views.IconTextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginTop="@dimen/padding_5"
+                               android:layout_gravity="center"
+                               android:text="@string/icon_text_K"/>
+
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginTop="@dimen/padding_5"
+                               android:layout_alignParentRight="true"
+                               android:orientation="horizontal">
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="7"
+                                   android:textSize ="20sp"/>
+
+                               <com.rezofy.views.custom_views.IconTextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:gravity="top"
+                                   android:text="@string/icon_text_K"
+                                   android:textSize="15sp"/>
+
+                           </LinearLayout>
+
+
+                           <RelativeLayout
+                               android:layout_width="20dp"
+                               android:layout_height="20dp"
+                               android:layout_marginTop="@dimen/padding_5">
+
+                               <com.rezofy.views.custom_views.IconTextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:gravity="top"
+                                   android:text="@string/icon_text_K"
+                                   android:textSize="20sp"/>
+
+                           </RelativeLayout>
+
+
+                       </LinearLayout>
+
+                       <View
+                           android:layout_width="1dp"
+                           android:layout_height="match_parent"
+                           android:background="@color/red_first"
+                           android:layout_marginTop="15dp"
+                           android:layout_marginBottom="15dp"/>
+
+
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="15"
+                           android:gravity="center"
+                           android:orientation="vertical">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="now"/>
+
+                           <com.rezofy.views.custom_views.IconTextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginTop="@dimen/padding_5"
+                               android:layout_gravity="center"
+                               android:text="@string/icon_text_K"/>
+
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginTop="@dimen/padding_5"
+                               android:layout_alignParentRight="true"
+                               android:orientation="horizontal">
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="7"
+                                   android:textSize ="20sp"/>
+
+                               <com.rezofy.views.custom_views.IconTextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:gravity="top"
+                                   android:text="@string/icon_text_K"
+                                   android:textSize="15sp"/>
+
+                           </LinearLayout>
+
+
+                           <RelativeLayout
+                               android:layout_width="20dp"
+                               android:layout_height="20dp"
+                               android:layout_marginTop="@dimen/padding_5">
+
+                               <com.rezofy.views.custom_views.IconTextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:gravity="top"
+                                   android:text="@string/icon_text_K"
+                                   android:textSize="20sp"/>
+
+                           </RelativeLayout>
+
+
+                       </LinearLayout>
+
+                       <View
+                           android:layout_width="1dp"
+                           android:layout_height="match_parent"
+                           android:background="@color/red_first"
+                           android:layout_marginTop="15dp"
+                           android:layout_marginBottom="15dp"/>
+
+
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="15"
+                           android:gravity="center"
+                           android:orientation="vertical">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="now"/>
+
+                           <com.rezofy.views.custom_views.IconTextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginTop="@dimen/padding_5"
+                               android:layout_gravity="center"
+                               android:text="@string/icon_text_K"/>
+
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginTop="@dimen/padding_5"
+                               android:layout_alignParentRight="true"
+                               android:orientation="horizontal">
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="7"
+                                   android:textSize ="20sp"/>
+
+                               <com.rezofy.views.custom_views.IconTextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:gravity="top"
+                                   android:text="@string/icon_text_K"
+                                   android:textSize="15sp"/>
+
+                           </LinearLayout>
+
+
+                           <RelativeLayout
+                               android:layout_width="20dp"
+                               android:layout_height="20dp"
+                               android:layout_marginTop="@dimen/padding_5">
+
+                               <com.rezofy.views.custom_views.IconTextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:gravity="top"
+                                   android:text="@string/icon_text_K"
+                                   android:textSize="20sp"/>
+
+                           </RelativeLayout>
+
+
+                       </LinearLayout>
+
+                       <View
+                           android:layout_width="1dp"
+                           android:layout_height="match_parent"
+                           android:background="@color/red_first"
+                           android:layout_marginTop="15dp"
+                           android:layout_marginBottom="15dp"/>
+
+
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="15"
+                           android:gravity="center"
+                           android:orientation="vertical">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="now"/>
+
+                           <com.rezofy.views.custom_views.IconTextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginTop="@dimen/padding_5"
+                               android:layout_gravity="center"
+                               android:text="@string/icon_text_K"/>
+
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginTop="@dimen/padding_5"
+                               android:layout_alignParentRight="true"
+                               android:orientation="horizontal">
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="7"
+                                   android:textSize ="20sp"/>
+
+                               <com.rezofy.views.custom_views.IconTextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:gravity="top"
+                                   android:text="@string/icon_text_K"
+                                   android:textSize="15sp"/>
+
+                           </LinearLayout>
+
+
+                           <RelativeLayout
+                               android:layout_width="20dp"
+                               android:layout_height="20dp"
+                               android:layout_marginTop="@dimen/padding_5">
+
+                               <com.rezofy.views.custom_views.IconTextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:gravity="top"
+                                   android:text="@string/icon_text_K"
+                                   android:textSize="20sp"/>
+
+                           </RelativeLayout>
+
+
+                       </LinearLayout>
+
+                       <View
+                           android:layout_width="1dp"
+                           android:layout_height="match_parent"
+                           android:background="@color/red_first"
+                           android:layout_marginTop="15dp"
+                           android:layout_marginBottom="15dp"/>
+
+
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="15"
+                           android:gravity="center"
+                           android:orientation="vertical">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="now"/>
+
+                           <com.rezofy.views.custom_views.IconTextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginTop="@dimen/padding_5"
+                               android:layout_gravity="center"
+                               android:text="@string/icon_text_K"/>
+
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginTop="@dimen/padding_5"
+                               android:layout_alignParentRight="true"
+                               android:orientation="horizontal">
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="7"
+                                   android:textSize ="20sp"/>
+
+                               <com.rezofy.views.custom_views.IconTextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:gravity="top"
+                                   android:text="@string/icon_text_K"
+                                   android:textSize="15sp"/>
+
+                           </LinearLayout>
+
+
+                           <RelativeLayout
+                               android:layout_width="20dp"
+                               android:layout_height="20dp"
+                               android:layout_marginTop="@dimen/padding_5">
+
+                               <com.rezofy.views.custom_views.IconTextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_centerInParent="true"
+                                   android:gravity="top"
+                                   android:text="@string/icon_text_K"
+                                   android:textSize="20sp"/>
+
+                           </RelativeLayout>
+
+
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+
+
+               </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+-->
+
+
+</RelativeLayout>

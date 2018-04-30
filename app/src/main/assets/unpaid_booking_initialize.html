@@ -1,0 +1,38 @@
+<html>
+<body>
+
+<form name="myForm" id="myForm" action="$ACTION$" method="POST" enctype="application/json">
+    <p>
+        <input name="bookingRefNo" value="$BOOKING_REF_NO$" type = "hidden" />
+    </p>
+    <p>
+        <input type="hidden" name="paymentGateway" value="$PAYMENT_TYPE$" />
+    </p>
+    <p>
+        <input type="hidden" name="token" value="$TOKEN$" />
+    </p>
+
+</form>
+
+<script>
+
+
+   /* var auto_refresh = setInterval(
+    function()
+    {
+    alert("click to proceed");
+    submitform();
+    }, 10000);
+
+    function submitform()
+    {
+      document.myForm.submit();
+    }*/
+	document.myForm.submit();
+    </script>
+
+
+
+</body>
+
+</html>

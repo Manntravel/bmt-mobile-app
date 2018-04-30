@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/padding_16"
+    android:paddingRight="@dimen/padding_10"
+    android:paddingTop="@dimen/padding_16">
+
+    <TextView
+        android:id="@+id/tax_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="80"
+        android:text="@string/total_tax"
+        android:textColor="@color/ticket_and_flight_color"
+        android:textSize="@dimen/size_12" />
+
+    <TextView
+        android:id="@+id/tax_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:gravity="right"
+        android:text="@string/rupee"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_12" />
+
+</LinearLayout>

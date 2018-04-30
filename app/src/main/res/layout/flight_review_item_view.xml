@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+
+        android:id="@+id/flight_details_sec_lay"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@color/white"
+        >
+
+        <RelativeLayout
+            android:id="@+id/flight_first_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/padding_25"
+            android:paddingTop="@dimen/padding_25"
+            android:gravity="right"
+            >
+
+            <TextView
+                android:id="@+id/flight_details_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21:20"
+                android:gravity="right"
+                android:padding="@dimen/padding_2"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                />
+            <TextView
+                android:layout_below="@+id/flight_details_time"
+                android:id="@+id/flight_details_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21 Nov"
+                android:gravity="right"
+                android:textColor="@color/light_gray"
+                android:textSize="14dp"
+                />
+
+            <TextView
+
+                android:id="@+id/flight_details_time_hm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/light_gray"
+                android:textSize="14dp"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/padding_25"
+                >
+
+                <TextView
+                    android:id="@+id/flight_details_time_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21:20"
+
+                    android:gravity="right"
+                    android:padding="@dimen/padding_2"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    />
+                <TextView
+                    android:layout_below="@+id/flight_details_time_again"
+                    android:id="@+id/flight_details_date_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21 Nov"
+                    android:gravity="right"
+                    android:textColor="@color/light_gray"
+                    android:textSize="14dp"
+                    />
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/flight_sec_lay"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/flight_first_lay"
+            android:layout_height="match_parent"
+
+            >
+
+            <View
+                android:id="@+id/first_dash_line"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/image_airoplane1"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:visibility="gone"
+                android:background="@drawable/dash_line"
+                android:layerType="software" />
+
+            <com.rezofy.views.custom_views.IconTextView
+                android:id="@+id/image_airoplane1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="w"
+                android:gravity="center"
+                android:layout_above="@+id/lines"
+                android:textColor="@color/black"
+                />
+
+            <View
+                android:id="@+id/lines"
+                android:layout_width="2dp"
+                android:layout_height="120dp"
+                android:background="@color/hint_color"
+                android:layout_centerInParent="true"
+                ></View>
+
+            <com.rezofy.views.custom_views.IconTextView
+                android:id="@+id/image_airoplane2"
+                android:layout_below="@+id/lines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="w"
+                android:textColor="@color/black"
+                android:gravity="center"
+
+                />
+
+
+            <View
+                android:id="@+id/last_dash_line"
+                android:layout_width="1dp"
+                android:layout_below="@+id/image_airoplane2"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/dash_line"
+                android:visibility="gone"
+                android:layerType="software" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_toRightOf="@+id/flight_sec_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/padding_25"
+            android:layout_marginLeft="@dimen/padding_2"
+            >
+            <TextView
+                android:id="@+id/flight_details_airport_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:paddingBottom="@dimen/padding_2"
+                android:gravity="left"
+                android:padding="@dimen/padding_2"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_below="@+id/flight_details_airport_name"
+                android:id="@+id/flight_details_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="left"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/padding_25"
+                android:background="@drawable/border"
+                android:padding="@dimen/padding_10">
+
+                <com.rezofy.views.custom_views.GifDecoderView
+                    android:id="@+id/iv_carrier_image"
+                    android:layout_width="40dp"
+                    android:layout_height="@dimen/text_size_40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/padding_5"
+                    android:gravity="left|center"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/airline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_5"
+                    android:layout_toRightOf="@+id/iv_carrier_image"
+                    android:text="Jet Airways"
+                    android:textColor="#a9a9a9"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/carriar_flightNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/airline"
+                    android:layout_toRightOf="@+id/iv_carrier_image"
+                    android:text="6E 399"
+                    android:textColor="#a9a9a9"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/padding_25"
+                >
+
+                <TextView
+                    android:id="@+id/flight_details_name_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+
+                    android:gravity="right"
+                    android:padding="@dimen/padding_2"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    />
+                <TextView
+                    android:layout_below="@+id/flight_details_name_again"
+                    android:id="@+id/flight_details_loc_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="right"
+                    android:textColor="@color/light_gray"
+                    android:textSize="14dp"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>
+
+

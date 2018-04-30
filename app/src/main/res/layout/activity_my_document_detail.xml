@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/busvoucherbg">
+    <include
+        layout="@layout/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/titleHeader"
+
+
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleHeader"
+        android:layout_above="@+id/myviewpager">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:id="@+id/tvDocumentName"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/aadhaar"
+            android:id="@+id/ivDocumentImage"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:layout_below="@+id/tvDocumentName"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/myviewpager">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_centerInParent="true" />
+
+
+
+    </RelativeLayout>
+
+
+
+    <com.rezofy.utils.RoundedImageView
+        android:id="@+id/btn_flaoting"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/chat_img"
+        android:scaleType="fitXY"
+        />
+</RelativeLayout>
+<!-- bottom sheet layout -->
+
+
+</android.support.design.widget.CoordinatorLayout>

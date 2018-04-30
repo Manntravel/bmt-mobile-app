@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="array_flight_image">
+        <item>@drawable/flight_one</item>
+        <item>@drawable/flight_two</item>
+        <item>@drawable/flight_three</item>
+    </integer-array>
+    <integer-array name="array_bus_image">
+        <item>@drawable/bus_one</item>
+        <item>@drawable/bus_two</item>
+        <item>@drawable/bus_three</item>
+
+    </integer-array>
+    <integer-array name="array_hotel_image">
+        <item>@drawable/hotel_one</item>
+        <item>@drawable/hotel_two</item>
+        <item>@drawable/hotel_three</item>
+
+    </integer-array>
+   <integer-array name="array_transfer_image">
+      <item>@drawable/hotel_one</item>
+      <item>@drawable/hotel_two</item>
+      <item>@drawable/hotel_three</item>
+
+   </integer-array>
+    <integer-array name="array_train_image">
+        <item>@drawable/bus_one</item>
+        <item>@drawable/bus_two</item>
+        <item>@drawable/bus_three</item>
+
+    </integer-array>
+    <integer-array name="array_package_image">
+        <item>@drawable/bus_one</item>
+        <item>@drawable/bus_two</item>
+        <item>@drawable/bus_three</item>
+
+    </integer-array>
+   <string-array name="array_document_type">
+       <item>Passport</item>
+       <item>Visa</item>
+       <item>Aadhaar</item>
+       <item>DRIVING LICENCE</item>
+       <item>DOWNLOAD POLICY</item>
+       <item>Other</item>
+   </string-array>
+    <integer-array name="array_document_type_image">
+        <item>@drawable/passport</item>
+        <item>@drawable/visa</item>
+        <item>@drawable/aadhaar</item>
+        <item>@drawable/dl</item>
+        <item>@drawable/download_policy</item>
+        <item>@drawable/other</item>
+    </integer-array>
+</resources>

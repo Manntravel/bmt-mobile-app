@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/flight_details_first_way"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:background="@color/top_bgcolor"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/place_first_way"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Delhi - Mumbai"
+            android:textColor="@color/black"
+            android:textSize="@dimen/place_size" />
+
+        <com.rezofy.views.custom_views.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/place_first_way"
+            android:layout_alignTop="@+id/place_first_way"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/place_first_way"
+            android:gravity="center"
+            android:text="@string/icon_text_x"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/departDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/place_first_way"
+            android:layout_marginTop="5dp"
+            android:text="Sat,21 NOV"
+            android:textColor="@color/black"
+            android:textSize="@dimen/date_size" />
+
+
+        <TextView
+            android:id="@+id/time_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="2h 20m"
+            android:textColor="@color/black"
+            android:textSize="@dimen/time_size" />
+
+        <TextView
+            android:id="@+id/non_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/departDate"
+            android:text="@string/non_stop"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/time_size" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

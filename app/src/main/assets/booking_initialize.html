@@ -1,0 +1,30 @@
+<html>
+<body>
+
+<form name="myForm" id="myForm" action="$ACTION$" method="POST">
+  <p>
+  <input name="searchId" value="$SEARCH_ID$" type = "hidden" />
+  </p>
+  <p>
+    <input type="hidden" name="token" value="$TOKEN$" />
+  </p>
+</form>
+
+    <script>
+
+    var auto_refresh = setInterval(
+    function()
+    {
+    alert("click to proceed");
+    submitform();
+    }, 10000);
+
+    function submitform()
+    {
+      document.myForm.submit();
+    }
+    </script>
+
+</body>
+
+</html>

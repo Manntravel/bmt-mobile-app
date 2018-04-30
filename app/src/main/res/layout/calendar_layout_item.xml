@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blackBorder"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlitemHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvDaysNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingRight="8dp"
+            android:text="1 day trip" />
+
+        <TextView
+            android:id="@+id/tvMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:text="January 2016"
+            android:textColor="@color/blackDark"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvMonth"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:weightSum="7">
+
+            <TextView
+                style="@style/week_day_style"
+                android:layout_width="0dp"
+                android:textColor="@color/red_first"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="s" />
+
+            <TextView
+                style="@style/week_day_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="m" />
+
+            <TextView
+                style="@style/week_day_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="t" />
+
+            <TextView
+                style="@style/week_day_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="w" />
+
+            <TextView
+                style="@style/week_day_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="t" />
+
+            <TextView
+                style="@style/week_day_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="f" />
+
+            <TextView
+                style="@style/week_day_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="s" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/border"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rlitemHead"
+        android:background="#10000000" />
+
+    <GridView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="228dp"
+        android:layout_below="@id/border"
+        android:background="@color/white"
+        android:listSelector="#00000000"
+        android:numColumns="7"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:scrollbars="none"/>
+
+    <TextView
+        android:id="@+id/tvClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calendar"
+        android:background="@color/white"
+        android:padding="12dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="You can add Guru Gobind Singh's Bday and extend your tour for 2 days"
+        android:textColor="@color/blackLight"
+        android:visibility="gone"
+        android:textSize="12sp" />
+
+</RelativeLayout>

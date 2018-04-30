@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/top_bgcolor">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/bottom_lay"
+        android:layout_below="@+id/header"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/flight_details_first_way"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/flight_details_second_way"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flight_details_first_way"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/fare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flight_details_second_way"
+                android:padding="@dimen/padding_16"
+                android:text="@string/fare_info"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_18" />
+
+            <TextView
+                android:id="@+id/tv_price_source"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fare"
+                android:paddingLeft="@dimen/padding_16"
+                android:paddingRight="@dimen/padding_16"
+                android:paddingBottom="@dimen/padding_16"
+                android:text="Price Source"
+                android:textColor="@color/grey_first"
+                android:textSize="15sp"
+                android:visibility="gone"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_price_source"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/fare_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_10">
+
+                    <com.rezofy.views.custom_views.IconTextView
+                        android:id="@+id/carrier_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:text="@string/icon_text_dollor_icon"
+                        android:textColor="@color/grey_first"
+                        android:textSize="30sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlFareRules"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/carrier_image"
+                        android:padding="@dimen/padding_10">
+
+                        <TextView
+                            android:id="@+id/airline_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/strItenary"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/fare_refundable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/airline_name"
+                            android:text="Refundable"
+                            android:textColor="#a9a9a9"
+                            android:textSize="@dimen/padding_16" />
+
+                        <TextView
+                            android:id="@+id/fare_rules"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="@string/fareRules"
+                            android:textColor="@color/blue_second" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlFareBreakup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/fare_info"
+                    android:padding="@dimen/padding_10">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_16"
+                        android:padding="@dimen/padding_10">
+
+                        <TextView
+                            android:id="@+id/fare_break_up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:text="@string/fareBreak"
+                            android:textColor="@color/blue_second" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/last_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/total_fare"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="50"
+                android:background="@color/black"
+                android:gravity="left|center"
+                android:paddingLeft="10dp"
+                android:text="@string/money"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/continue_button"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="50"
+                android:background="@color/orange"
+                android:gravity="center"
+                android:text="CONTINUE" />
+        </LinearLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <com.rezofy.utils.RoundedImageView
+        android:id="@+id/btn_flaoting"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|start"
+        android:background="@drawable/chat_img"
+        android:scaleType="fitXY"
+        />
+</FrameLayout>

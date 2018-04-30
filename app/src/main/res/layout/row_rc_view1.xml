@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fares"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="6E 183"
+        android:textColor="@color/grey_second"
+        android:textSize="12sp" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/image_flight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/category"
+        android:layout_alignLeft="@+id/category"
+        android:layout_alignRight="@+id/category"
+        android:layout_alignTop="@+id/time"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/category"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dep_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="7:30 "
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="1dp"
+            android:background="@color/grey_first" />
+
+        <TextView
+            android:id="@+id/arr_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text=" 9:30"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/duration_and_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/time"
+        android:layout_below="@+id/time"
+        android:layout_marginBottom="2dp"
+        android:text="1h 55m  |  non-stop"
+        android:textColor="@color/grey_first"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_pricing_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/category"
+        android:layout_below="@+id/duration_and_type"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="price source"
+        android:textColor="@color/black"
+        android:textSize="13sp"/>
+
+    <RelativeLayout
+        android:id="@+id/fares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/duration_and_type"
+        android:layout_below="@+id/tv_pricing_source"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/customer_fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="$80786"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/business_fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" | $8,982"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/customer_fare"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</RelativeLayout>

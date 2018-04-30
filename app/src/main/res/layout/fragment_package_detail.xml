@@ -1,0 +1,265 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rezofy.views.fragments.PackageDetailFragment">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/header">
+
+        <ImageView
+            android:id="@+id/iv_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+
+        <com.rezofy.views.custom_views.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/icon_text_L"
+            android:textSize="32sp"
+            android:textColor="@color/black_op30"
+            />
+
+            <com.rezofy.views.custom_views.IconTextView
+                android:id="@+id/iv_pack_fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/icon_text_unFav"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_place_name_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:text="AUSTRALIA"
+            android:textSize="44sp"
+            android:textColor="@color/black_op30"
+            android:textAllCaps="true"
+            android:background="@color/black_op00"/>
+
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_call_enq"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_best_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="BEST OF SYDNEY"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:background="@color/blue_first"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="140000"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:gravity="right|center"
+                android:paddingRight="10dp"
+                android:background="@color/yellow_ffc600"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_call_enq"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:weightSum="2"
+            android:background="@color/black_op30">
+
+            <LinearLayout
+                android:id="@+id/ll_call"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <com.rezofy.views.custom_views.IconTextView
+                    android:id="@+id/iv_call_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/icon_text_L"
+                    android:textSize="32sp"
+                    android:textColor="@color/white"
+
+                    />
+
+                <com.rezofy.views.custom_views.IconTextView
+                    android:id="@+id/iv_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/icon_text_call"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/rl_call"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:text="@string/call_txt"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width=".2dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/padding_5"
+                android:layout_marginBottom="@dimen/padding_5"
+                android:background="@color/white"/>
+
+            <LinearLayout
+                android:id="@+id/ll_enquiry"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_enquiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.rezofy.views.custom_views.IconTextView
+                        android:id="@+id/iv_enguiry_bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/icon_text_L"
+                        android:textSize="32sp"
+                        android:textColor="@color/white"
+
+                        />
+
+                    <com.rezofy.views.custom_views.IconTextView
+                        android:id="@+id/iv_enquiry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/icon_text_enquiry"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_enquiry"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:text="@string/enquiry_txt"
+                    android:textColor="@color/white"
+                    android:textAllCaps="true"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_detail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/rl_header"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tv_tour_detail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/text_details"
+            android:textAllCaps="true"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_tour_itinerary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/text_itinerary"
+            android:textAllCaps="true"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/tv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/ll_detail"
+        android:background="@color/black_383838"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_detail"
+        android:scrollbars="vertical"
+        >
+
+    <TextView
+        android:id="@+id/tv_overview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="This is detail txt"
+        android:textColor="@color/black_383838" />
+    </ScrollView>
+
+</RelativeLayout>

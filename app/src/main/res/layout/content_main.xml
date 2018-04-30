@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.activities.FlightsSearchDomesticTwowayActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+
+
+    <TextView
+        android:id="@+id/no_flights_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:gravity="center"
+        android:text="@string/no_flights_found_msg"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/filter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header">
+
+        <LinearLayout
+            android:id="@+id/gds_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/white">
+
+                <RelativeLayout
+                    android:id="@+id/rl_departure"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/departure_way_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/departure_text_oneway"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="15sp" />
+
+                    <com.rezofy.views.custom_views.IconTextView
+                        android:id="@+id/icon_departure_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/departure_way_text"
+                        android:layout_alignTop="@+id/departure_way_text"
+                        android:layout_toRightOf="@+id/departure_way_text"
+                        android:gravity="center"
+                        android:text="@string/icon_text_t"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/grey_second" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_duration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/duretion_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <com.rezofy.views.custom_views.IconTextView
+                        android:id="@+id/icon_duration_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_duration"
+                        android:layout_alignTop="@+id/tv_duration"
+                        android:layout_toRightOf="@+id/tv_duration"
+                        android:gravity="center"
+                        android:text="@string/icon_text_t"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/grey_second" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/price_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/price"
+                        android:textColor="@color/common_text_color"
+                        android:textSize="15sp" />
+
+                    <com.rezofy.views.custom_views.IconTextView
+                        android:id="@+id/icon_price_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/price_way"
+                        android:layout_alignTop="@+id/price_way"
+                        android:layout_toRightOf="@+id/price_way"
+                        android:gravity="center"
+                        android:text="@string/icon_text_t"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_second" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_gds"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/non_gds_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/origin_first_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="DEL"
+                        android:textColor="@color/grey_first"
+                        android:textSize="12sp" />
+
+                    <com.rezofy.views.custom_views.IconTextView
+                        android:id="@+id/single_trip_icon_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/origin_first_way"
+                        android:layout_alignTop="@+id/origin_first_way"
+                        android:layout_toRightOf="@+id/origin_first_way"
+                        android:gravity="center"
+                        android:text="@string/icon_text_s"
+                        android:textColor="@color/grey_first"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:id="@+id/dest_first_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/origin_first_way"
+                        android:layout_alignTop="@+id/origin_first_way"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/single_trip_icon_first"
+                        android:text="BOM"
+                        android:textColor="@color/grey_first"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey_second" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/origin_second_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="BOM"
+                        android:textColor="@color/grey_first"
+                        android:textSize="12sp" />
+
+                    <com.rezofy.views.custom_views.IconTextView
+                        android:id="@+id/single_trip_icon_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/origin_second_way"
+                        android:layout_alignTop="@+id/origin_second_way"
+                        android:layout_toRightOf="@+id/origin_second_way"
+                        android:gravity="center"
+                        android:text="@string/icon_text_s"
+                        android:textColor="@color/grey_first"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:id="@+id/dest_second_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/origin_second_way"
+                        android:layout_alignTop="@+id/origin_second_way"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/single_trip_icon_second"
+                        android:text="DEL"
+                        android:textColor="@color/grey_first"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <RelativeLayout
+                    android:id="@+id/time_first_way_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/time_first_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/time"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <com.rezofy.views.custom_views.IconTextView
+                        android:id="@+id/sort_icon_first_way_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/time_first_way"
+                        android:layout_alignTop="@+id/time_first_way"
+                        android:layout_toRightOf="@+id/time_first_way"
+                        android:gravity="center"
+                        android:text="@string/icon_text_k"
+                        android:textColor="@android:color/black"
+                        android:textSize="8sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/grey_second" />
+
+                <RelativeLayout
+                    android:id="@+id/price_first_way_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/price_first_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/price"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <com.rezofy.views.custom_views.IconTextView
+                        android:id="@+id/sort_icon_first_way_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/price_first_way"
+                        android:layout_alignTop="@+id/price_first_way"
+                        android:layout_toRightOf="@+id/price_first_way"
+                        android:gravity="center"
+                        android:text="@string/icon_text_t"
+                        android:textColor="@android:color/black"
+                        android:textSize="8sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey_second" />
+
+                <RelativeLayout
+                    android:id="@+id/time_second_way_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/time_second_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/time"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <com.rezofy.views.custom_views.IconTextView
+                        android:id="@+id/sort_icon_second_way_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/time_second_way"
+                        android:layout_alignTop="@+id/time_second_way"
+                        android:layout_toRightOf="@+id/time_second_way"
+                        android:gravity="center"
+                        android:text="@string/icon_text_k"
+                        android:textColor="@android:color/black"
+                        android:textSize="8sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/grey_second" />
+
+                <RelativeLayout
+                    android:id="@+id/price_second_way_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/price_second_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/price"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+                    <com.rezofy.views.custom_views.IconTextView
+                        android:id="@+id/sort_icon_second_way_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/price_second_way"
+                        android:layout_alignTop="@+id/price_second_way"
+                        android:layout_toRightOf="@+id/price_second_way"
+                        android:gravity="center"
+                        android:text="@string/icon_text_t"
+                        android:textColor="@android:color/black"
+                        android:textSize="8sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_second" />
+
+            <LinearLayout
+                android:id="@+id/layout_rcView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcView1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey_second" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcView2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

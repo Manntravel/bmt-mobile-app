@@ -1,0 +1,561 @@
+<resources>
+    <!-- icon text -->
+    <string name="icon_text_a">a</string>
+    <string name="icon_text_b">b</string>
+    <string name="icon_text_hash">#</string>
+    <string name="icon_text_c">c</string>
+    <string name="icon_text_d">d</string>
+    <string name="icon_text_e">e</string>
+    <string name="icon_text_f">f</string>
+    <string name="icon_text_g">g</string>
+    <string name="icon_text_h">h</string>
+    <string name="icon_text_i">i</string>
+    <string name="icon_text_j">j</string>
+    <string name="icon_text_k">k</string>
+    <string name="icon_text_l">l</string>
+    <string name="icon_text_m">m</string>
+    <string name="icon_text_n">n</string>
+    <string name="icon_text_o">o</string>
+    <string name="icon_text_p">p</string>
+    <string name="icon_text_q">q</string>
+    <string name="icon_text_r">r</string>
+    <string name="icon_text_s">s</string>
+    <string name="icon_text_t">t</string>
+    <string name="icon_text_u">u</string>
+    <string name="icon_text_v">v</string>
+    <string name="icon_text_w">w</string>
+    <string name="icon_text_x">x</string>
+    <string name="icon_text_y">y</string>
+    <string name="icon_text_z">z</string>
+    <string name="icon_text_A">A</string>
+    <string name="icon_text_B">B</string>
+    <string name="icon_text_C">C</string>
+    <string name="icon_text_D">D</string>
+    <string name="icon_text_E">E</string>
+    <string name="icon_text_F">F</string>
+    <string name="icon_text_G">G</string>
+    <string name="icon_text_H">H</string>
+    <string name="icon_text_I">I</string>
+    <string name="icon_text_J">J</string>
+    <string name="icon_text_K">K</string>
+    <string name="icon_text_L">L</string>
+    <string name="icon_text_M">M</string>
+    <string name="icon_text_N">N</string>
+    <string name="icon_text_O">O</string>
+    <string name="icon_text_P">P</string>
+    <string name="icon_text_Q">Q</string>
+    <string name="icon_text_R">R</string>
+    <string name="icon_text_S">S</string>
+    <string name="icon_text_T">T</string>
+    <string name="icon_text_U">U</string>
+    <string name="icon_text_V">V</string>
+    <string name="icon_text_W">W</string>
+    <string name="icon_text_X">X</string>
+    <string name="icon_text_Y">Y</string>
+    <string name="icon_text_Z">Z</string>
+    <string name="icon_text_0">0</string>
+    <string name="icon_text_1">1</string>
+    <string name="icon_text_2">2</string>
+    <string name="icon_text_3">3</string>
+    <string name="icon_text_7">7</string>
+
+    <string name="icon_text_search">#</string>
+    <string name="icon_text_unFav">$</string>
+    <string name="icon_text_fav">%</string>
+    <string name="icon_text_enquiry">&amp;</string>
+    <string name="icon_text_childern">\'</string>
+    <string name="icon_text_call">(</string>
+    <string name="icon_text_filter">,</string>
+
+    <string name="icon_text_weather">]</string>
+    <string name="icon_text_visa">^</string>
+    <string name="icon_text_policy">_</string>
+    <string name="icon_text_package">`</string>
+    <string name="icon_text_mytrips">{</string>
+    <string name="icon_text_mydocuments">|</string>
+    <string name="icon_text_flight_tracker">}</string>
+    <string name="icon_text_flight_checkin">~</string>
+    <string name="icon_text_currency_converter">\\</string>
+    <string name="icon_text_baggage_info">&#xe000;</string>
+    <string name="icon_text_dollor_icon">&#xe001;</string>
+    <string name="icon_text_info">.</string>
+    <string name="icon_text_cruise">&#xe003;</string>
+
+
+    <string name="one">1</string>
+    <string name="zero">0</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="seventeen">17</string>
+
+    <string name="return_msg">Book Round Trips for great savings!</string>
+    <!--<string name="rupee_symbol">\u20B9</string>     &lt;!&ndash;Indian currency&ndash;&gt;-->
+    <string name="rupee_symbol">AUD </string>               <!--Australian currency-->
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="confirm_logout">Sure you want to logout?</string>
+    <string name="title_activity_flights_search">FlightsSearchActivity</string>
+
+    <!-- Dialog  Toast   -->
+    <string name="max_passenger">You have reached maximum passenger limit.</string>
+    <string name="upto_max_passenger">Upto 9 passengers can be booked at a time.</string>
+    <string name="max_infants">Number of infants can\'t exceed number of adults.</string>
+    <string name="search_city">Enter Departure City</string>
+    <string name="search_passenger">Enter Passenger Name</string>
+    <string name="getStart_text">Get Started</string>
+    <string name="forgot_password_text">Forgot Password ?</string>
+    <string name="travel_class_title">Travel Class</string>
+    <string name="username">Email Id</string>
+    <string name="password">Password</string>
+    <string name="sign_text">Sign Up</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="economy_class_text">ECONOMY </string>
+    <string name="premium_economy_text">PREMIUM ECONOMY</string>
+    <string name="business_class_text">BUSINESS</string>
+    <string name="travellers_text">TRAVELLERS</string>
+    <string name="first_class_text">FIRST </string>
+    <string name="minus_text">-</string>
+    <string name="plus_text">+</string>
+    <string name="adult_text">ADULT</string>
+    <string name="adults_text">ADULTS</string>
+    <string name="year_12_above_text">12 years and above</string>
+    <string name="year_2_to_12_above_text">2 to 12 years old</string>
+    <string name="less_2_years_text">Less than 2 years</string>
+    <string name="childs_text">CHILDREN</string>
+    <string name="infants_text">INFANTS</string>
+    <string name="ok_text">OK</string>
+    <string name="from_text">FROM</string>
+    <string name="to_text">TO</string>
+    <string name="test_from_text">Test From Place Name</string>
+    <string name="test_to_text">Test To Place Name</string>
+    <string name="test_from_airport_text">Test From Airport Name</string>
+    <string name="test_to_airport_text">Test To Airport Name</string>
+    <string name="departure_text">DEPARTURE</string>
+    <string name="departure_month_text">NOV</string>
+    <string name="return_month_text">NOV</string>
+    <string name="departure_day_text">TOMORROW</string>
+    <string name="return_day_text">TOMORROW</string>
+    <string name="return_text">RETURN</string>
+    <string name="search_text">SEARCH</string>
+    <string name="network_error">Please check your Internet connection and try again</string>
+    <string name="main_header_title_text">Rezofy</string>
+
+    <!--login screen-->
+    <string name="blank_username">Please Enter Email Id</string>
+    <string name="blank_password">Please Enter Password</string>
+    <string name="invalid_mail">Please Enter Valid Email Id</string>
+
+    <!-- home layout text -->
+    <string name="flights_text">Flights</string>
+    <string name="packages_txt">Packages</string>
+    <string name="continue_text">Continue</string>
+    <!-- header text-->
+    <string name="header_title_text">Test</string>
+    <string name="state_name_text">New Delhi,</string>
+    <string name="country_name_text">New Delhi</string>
+    <string name="airport_text">DEL -</string>
+    <string name="airport_name_text">Indira Gandhi international Airport</string>
+    <string name="viewpager_text">Polynesia French Island</string>
+    <!-- view pager image text -->
+    <string name="view_pager_first_image_text">Polynesia French Island1</string>
+    <string name="view_pager_second_image_text">Polynesia French Island2</string>
+    <string name="view_pager_third_image_text">Polynesia French Island3</string>
+    <string name="true_string">true</string>
+
+
+    <!--Search Flights Screen-->
+    <string name="book">BOOK</string>
+    <string name="time">Time</string>
+    <string name="price">Price</string>
+    <string name="departure_text_oneway">Departure</string>
+    <string name="duretion_text">Duration</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="select_date">Select Dates</string>
+
+    <!--Two way Domestic Flight Search Screen -->
+    <string name="all_airlines_text">All airlines</string>
+    <string name="memory_full">Internal Memory Full</string>
+    <string name="gds_airlines_text">GDS</string>
+    <string name="passenger_1">Passenger #1</string>
+    <string name="passenger_no_text">Passenger #</string>
+    <string name="adult_small_text">Adult</string>
+    <string name="child_small_text">Child</string>
+    <string name="infant_small_text">Infant</string>
+    <string name="first_name">First Name (middle name if any)</string>
+    <string name="last_name">Last Name</string>
+    <string name="type">Type</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="gender_string">Gender</string>
+    <string name="residence_string">Country of Residence</string>
+    <string name="passport_no">Passport Number</string>
+    <string name="pp_issued_by_string">Passport issued by</string>
+    <string name="pp_exp_date_string">Passport Expiration Date</string>
+    <string name="money">\u20B9 7,596</string>
+    <string name="next_pass">NEXT PASSENGER</string>
+    <string name="previous_pass">PREVIOUS PASSENGER</string>
+    <string name="passenger_text">Passenger</string>
+    <string name="spinner_title">Title</string>
+    <string name="today_text">TODAY</string>
+    <string name="tomorrow_text">TOMORROW</string>
+
+    <!-- payment screen -->
+    <string name="payment_header_title_text">Payment</string>
+    <string name="text_small_adult">Adult</string>
+    <string name="text_small_adults">Adults</string>
+    <string name="text_small_child">Child</string>
+    <string name="text_small_children">Children</string>
+    <string name="text_small_infant">Infant</string>
+    <string name="text_small_infants">Infants</string>
+    <string name="fare_info">Fare Information</string>
+    <string name="flight_text">Flight Details</string>
+    <string name="header_review_text">Review and Payment</string>
+    <string name="email_id">Email id</string>
+    <string name="hint_mobile">Mobile</string>
+    <string name="term_text"><u>Terms and Conditions</u></string>
+    <string name="recent_search">Recent Searches</string>
+
+    <string name="msg_cancellation_request_received">Your cancellation request has been received</string>
+    <string name="msg_cancellation_failure">Please call portal support team to confirm the cancellation request</string>
+    <string name="contact_info">Contact Information</string>
+    <string name="ticket_and_flight">Your ticket and flight info will be sent here</string>
+    <string name="email">Email</string>
+    <string name="plus_91">+91</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="billing_info">Billing Information</string>
+    <string name="same_as_my_pro">Same as my profile</string>
+    <string name="bill_name">Billing Name</string>
+    <string name="address_name">Address</string>
+    <string name="city_name">City</string>
+    <string name="country_name">Country</string>
+    <string name="state_name">State</string>
+    <string name="pincode">Pincode</string>
+    <string name="send_sms_email">Send sms/email information to traveller</string>
+    <string name="fare_break">Fare Break-Up</string>
+    <string name="basic_fare">Basic Fare</string>
+    <string name="adult_one">Adult(1)</string>
+    <string name="rupee">\u20B9,762</string>
+    <string name="surcharges">Surcharges</string>
+    <string name="cute_fee">CUTE Fee</string>
+    <string name="airport_development">Airport Development Fee</string>
+    <string name="passenger_service">Passenger Service Fee</string>
+    <string name="service_tax">Service Tax</string>
+    <string name="discount_value">Discount</string>
+    <string name="air_line_fuel_charge">Airline Fuel Charge</string>
+    <string name="total">Total</string>
+    <string name="refundable">Refundable</string>
+    <string name="non_refundable">Non-refundable</string>
+    <string name="meal_string">Meal</string>
+    <string name="invalid_username_or_password">Invalid User Login</string>
+    <string name="flight_code_city_country">DEL , New Delhi , India</string>
+    <string name="airport_name_text_dest">Chhatrapati Shivaji International Airport</string>
+    <string name="flight_code_city_country_dest">MAA , Chennai , India</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="zip">Pincode</string>
+    <string name="enter_complete_info">Please enter complete information for Passenger #</string>
+    <string name="jet_airways">Jet Airways</string>
+    <string name="jet_code">6E 399</string>
+    <string name="my_trip">My Trip</string>
+    <string name="my_balance">My Balance</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="term_and_conditions">Terms and Conditions</string>
+    <string name="setting">Setting</string>
+    <string name="logout">Logout</string>
+    <string name="case_value">Cash</string>
+    <string name="balance_value">Balance</string>
+    <string name="credit">Credit</string>
+    <string name="text_cash_balance">Cash Balance</string>
+    <string name="text_credit_balance">Credit Balance</string>
+    <string name="cotact_us">Contact Us</string>
+    <string name="text_billing_and_contact">Billing and Contact</string>
+    <string name="total_tax">Total Tax</string>
+    <string name="commision_earned">Commission Earned</string>
+    <string name="tds">TDS</string>
+    <string name="markup">My Markup</string>
+    <string name="netPayable">Net Payable</string>
+    <string name="fareRules">FARE RULES</string>
+    <string name="fareBreak">FARE BREAK-UP</string>
+    <string name="insufficient_combined_limit">*Sorry, your combined cash and credit limit is insufficient. Tap on Credit Limit to refresh balance.</string>
+    <string name="ticket_booked">Ticket successfully booked with Ref No #</string>
+    <string name="text_view_ticket">Ticket</string>
+    <string name="travel">TRAVELLED</string>
+    <string name="booked_on">Booked On</string>
+    <string name="indigo">Indigo</string>
+    <string name="ticket_code">6E-244</string>
+    <string name="pnr">PNR#</string>
+    <string name="pnrCode">7GH7NF0</string>
+    <string name="maa">MAA</string>
+    <string name="place">Madaras International</string>
+    <string name="city">Chennai</string>
+    <string name="place_in_bracket">(Meenambakkam)</string>
+    <string name="dest_value">DEL</string>
+    <string name="strItenary">The itinerary is</string>
+    <string name="my_trips">My Trips</string>
+    <string name="my_trips_hotel_voucher">Hotel Voucher</string>
+    <string name="btoc_not_allowed">B2C user not allowed for selected payment mode</string>
+    <string name="header_fare_rule_text">Fare Rules</string>
+    <string name="auto_ticket">Auto Ticket</string>
+    <string name="adminCharges">Admin Transaction Surcharges</string>
+    <string name="agreed">I have received and agreed on the</string>
+    <string name="your_ticket">Your ticket and flight info will be sent here.</string>
+    <string name="non_stop">Non Stop</string>
+    <string name="text_non_refundable">Non-Refundable</string>
+    <string name="text_refundable">Refundable</string>
+    <string name="alphabets">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="alphanumeric">ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</string>
+    <string name="agree_terms">You must agree to the Terms and Conditions.</string>
+    <string name="resetPswd_text">Reset Using Email</string>
+    <string name="enter_valid_pp_no">Please enter valid passport no</string>
+    <string name="deduction_from_cash">*Booking amount will be deducted from cash limit only</string>
+    <string name="deduction_from_cash_and_credit">*Booking amount will be deducted from cash as well as credit limit</string>
+    <string name="deduction_from_credit">*Booking amount will be deducted from credit limit</string>
+    <string name="credit_expired">Sorry, your credit limit has expired. Tap on Credit Limit to refresh balance.</string>
+    <string name="title_activity_trip_details">TripDetailsActivity</string>
+    <string name="text_total_fare">Total Fare</string>
+    <string name="text_payment_details">Payment Details</string>
+    <string name="text_cancel_booking">CANCEL BOOKING</string>
+    <string name="some_technical_error">Some Technical Error</string>
+    <string name="wrong_email_id">Wrong Email Id</string>
+    <string name="valid_phone_no_txt9">Wrong Phone Number. Please Provide valid Phone no of 9 digits.</string>
+    <string name="valid_phone_no_txt10">Wrong Phone Number. Please Provide valid Phone no of 10 digits.</string>
+
+
+    <!--    facebook id   -->
+    <string name="validity_expired">(Validity Expired)</string>
+    <string name="reached_first_passenger">You have reached first passenger details</string>
+    <string name="reached_last_passenger">You have reached last passenger details</string>
+    <string name="error_enter_first_name">Please enter First name for Passenger #</string>
+    <string name="error_enter_last_name">Please enter Last name for Passenger #</string>
+    <string name="error_select_gender">Please select Gender for Passenger #</string>
+    <string name="error_select_dob">Please select Date of Birth for Passenger #</string>
+    <string name="error_passport">Please enter Passport Information for Passenger #</string>
+    <string name="error_enter_passport_no">Please enter Passport No for Passenger #</string>
+    <string name="error_select_passport_exp_date">Please select Passport Expiry Date for Passenger #</string>
+    <string name="arr_dep_same">Arrival city and Departure city can not be same</string>
+    <string name="no_flights_found_msg">No flights found</string>
+    <string name="no_recent_trips">Sorry…No recent trips</string>
+    <string name="text_contact_us">Contact Us.html</string>
+    <string name="crash_toast_text">An unexpected error occurred forcing the
+    application to stop. Please help us fix this by sending us error data</string>
+    <string name="crash_ok_toast">Thank you !</string>
+    <string name="text_terms_and_conditions">Terms and Conditions.html</string>
+    <string name="error_msg">Sorry, some technical issue, please try again after some time</string>
+    <string name="no_trips">No trips available in your account</string>
+    <string name="credit_card_text">Credit Card</string>
+    <string name="online_pay_text">Online Payment</string>
+    <string name="cash_card_text">Cash Card</string>
+    <string name="credit_limit_text">Credit Limit</string>
+    <string name="text_booking_failed">Your booking has been failed, please contact Administrator.</string>
+    <string name="text_permisson_refused">Permission refused</string>
+    <string name="text_share">Share</string>
+    <string name="text_home">Home</string>
+    <string name="text_click_to_see_details">Click to see details</string>
+    <string name="text_details">Details</string>
+    <string name="text_travellers_title">Travellers</string>
+    <string name="text_skip">I\'ll Skip</string>
+    <string name="login_msg">Sorry, to proceed further, you need to login</string>
+    <string name="text_option_mapping_faulty">Option mapping faulty</string>
+    <string name="image_path_pre_string">airline_logos/</string>
+    <string name="image_path_post_string">.gif</string>
+    <string name="login">Login</string>
+    <string name="chat">Chat</string>
+    <string name="userName">UserName</string>
+    <string name="login_1">Login</string>
+    <string name="convenience_fees_is">Convenience Fees is</string>
+    <string name="txt_booking_cancel">Are you sure, you want to cancel this booking?</string>
+    <string name="text_ok">Ok</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="guest_infromation">GUEST INFORMATION</string>
+    <string name="mailid">MAIL ID</string>
+    <string name="billing_details">BILLING DETAILS</string>
+    <string name="type_of_room">TYPE OF ROOM</string>
+    <string name="base_fare">BASE FARE</string>
+    <string name="taxes">TAXES</string>
+    <string name="pay_for_stay">PAY FOR THIS STAY</string>
+    <string name="cancel_this_stay">CANCEL THIS STAY</string>
+    <string name="search_title">Search</string>
+    <string name="search_hint">pnr no.,booking ref.</string>
+    <string name="no_search_item_message">Sorry no booking is found please try again with PNR, booking reference number or passenger name</string>
+    <string name="boarding_point">BOARDING POINT</string>
+    <string name="board">BOARD</string>
+    <string name="seats">SEATS</string>
+    <string name="ticket_no">TICKET NUMBER</string>
+    <string name="operator">OPERATOR</string>
+    <string name="passenger">PASSENGERS</string>
+    <string name="my_trips_bus_voucher">Bus Voucher</string>
+    <string name="payable_amt">PAYABLE AMOUNT</string>
+    <string name="pay_now">PAY NOW</string>
+    <string name="total_payable_amount">TOTAL PAYABLE AMOUNT</string>
+    <string name="paid">PAID</string>
+    <string name="welcome">Welcome</string>
+    <string name="add_document">ADD DOCUMENT</string>
+    <string name="done">DONE</string>
+    <string name="at_the_rate">\@</string>
+    <string name="convert">CONVERT</string>
+    <string name="flight_tracker">FLIGHT  TRACKER</string>
+    <string name="my_document">My Documents</string>
+    <string name="insuree_name">INSUREE NAME</string>
+    <string name="policy_no">POLICY NUMBER</string>
+    <string name="period_insured">PERIOD INSURED</string>
+    <string name="policy_provider">POLICY PROVIDER</string>
+    <string name="country_travelling">COUNTRY TRAVELLING</string>
+    <string name="premium">Premimum</string>
+    <string name="view_or_download">VIEW OR DOWNLOAD</string>
+    <string name="pay_premium">PAY PREMIUM</string>
+    <string name="policy_info">Policy Info</string>
+
+    <!--PopularPackages Screen -->
+    <string name="packages_text">PACKAGES</string>
+    <string name="starting_from">Starting From</string>
+    <string name="amount_only">/-</string>
+    <string name="countries">countries</string>
+
+    <!--CountryPackages Screen -->
+    <string name="deals">deals</string>
+    <string name="best_of">best of</string>
+    <string name="no_fav_text">Oops...you did not find any suitable package from our inventory yet! Please contact to our support staff, we will be back with the customized package of your choice</string>
+
+    <!--PackageDetail Screen -->
+    <string name="text_itinerary">itinerary</string>
+    <string name="text_overview">overview</string>
+    <string name="enquiry_txt">enquiry</string>
+    <string name="call">tel:</string>
+
+    <!--Enquiry Screen -->
+    <string name="name">Name</string>
+    <string name="my_location">My Location</string>
+    <string name="check_in_date">Check-In Date</string>
+    <string name="remark_text">Remarks</string>
+    <string name="optional">Optional</string>
+    <string name="submit">submit</string>
+    <string name="error_field_required">* Mandatory</string>
+    <string name="my_country">My Country</string>
+    <string name="my_city">My City</string>
+    <string name="destination_country">Destination Country</string>
+    <string name="destination_city">Destination City</string>
+    <string name="Destination">Destination</string>
+    <string name="p2nights3days">2 Nights &amp; 3 days</string>
+    <string name="p3nights4days">3 Nights &amp; 4 days</string>
+    <string name="p4nights5days">4 Nights &amp; 5 days</string>
+    <string name="other">Other</string>
+    <string name="error_select_date">Please select Date for Passenger #</string>
+    <string name="error_select_duration">Please select Duration for Passenger #</string>
+    <string name="enter_mendatory_field">Please enter Mendatory Field</string>
+    <string name="data_submit_sucessfully">Data Submit Sucessfully</string>
+    <string name="select_country">Select Country</string>
+    <string name="select_my_country">Please Select My Country</string>
+    <string name="select_destination_country">Please Select Destination Country</string>
+    <string name="enter_my_city">Please Enter My City</string>
+    <string name="enter_destination_city">Please Enter Destination City</string>
+
+    <!--PlaceSearchFragment -->
+    <string name="type_or_select_country">Type or Select Country</string>
+
+    <!--Filter Dialog -->
+    <string name="filter">Filter</string>
+    <string name="any">Any</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="call_txt">call</string>
+    <string name="price_range">Price Range</string>
+
+
+    <!--WeatherActivity-->
+    <string name="temperature">temperature</string>
+    <string name="real_feel">real feel</string>
+    <string name="precipitation">precipitation</string>
+
+    <!--TripBoxFragment-->
+    <string name="trip_box_text">tripbox</string>
+    <string name="guest">Guest</string>
+
+    <!--Weather Activity-->
+    <string name="weather">Weather</string>
+
+    <!--Flight Checkin-->
+    <string name="web_checkin">Web Check-in</string>
+    <string name="select_airline">Please Select Airline</string>
+    <string name="baggage_information">Baggage Information</string>
+
+    <!--CurrencyConverterActivity-->
+    <string name="currency_converter">Currency Converter</string>
+    <string name="airline_name">Airline Name</string>
+    <string name="flight_number">Flight Number</string>
+    <string name="traveller_name">TRAVELLER  NAME</string>
+    <string name="visa_number">VISA NUMBER</string>
+    <string name="fees">Fees</string>
+    <string name="view">VIEW</string>
+    <string name="download">DOWNLOAD</string>
+    <string name="visa_info">Visa Info</string>
+    <string name="no_trip_list_item">No Trip Available</string>
+    <string name="train_name">TRAIN NAME</string>
+    <string name="reservation_id">RESERVATION ID</string>
+    <string name="sheduleled_arrival">SCHEDULED ARRIVAL</string>
+    <string name="sheduled_departure">SCHEDULED DEPARTURE</string>
+    <string name="status">STATUS,</string>
+    <string name="coach">COACH,</string>
+    <string name="seat">SEAT,</string>
+    <string name="berth">BERTH</string>
+    <string name="fare_summary">FARE SUMMARY</string>
+    <string name="ticket_fare">TICKET FARE</string>
+    <string name="irctc_service_tax">IRCTC SERVICE TAX</string>
+    <string name="agent_service_charge">AGENT SERVICE CHARGE</string>
+    <string name="pg_charges">PG CHARGES</string>
+    <string name="my_trips_train_voucher">Train Voucher</string>
+    <string name="train_list_icon"><![CDATA[<]]></string>
+    <string name="transfer_provider">TRANSFER PROVIDER</string>
+    <string name="provider_contact_no">PROVIDER CONTACT NO</string>
+    <string name="time_to_report">TIME TO REPORT</string>
+    <string name="receipt_number">RECEIPT NUMBER</string>
+    <string name="no_of_travellers">NO OF TRAVELLERS</string>
+    <string name="my_trips_transfer_voucher">Transfer Voucher</string>
+
+
+    <!--MyDocumentTypeActivity-->
+    <string name="user_doc_list">userDocumentList</string>
+    <string name="have_promocode">But I want to apply for Promocode</string>
+    <string name="enter_promocode">Enter Promocode</string>
+    <string name="no_promocode">No Promotion Code Found !</string>
+    <string name="remove">Remove</string>
+    <string name="fare_break_up">Some Taxes have been applied</string>
+    <string name="click_here">Some taxes have been applied, click here to view the updated breakup</string>
+    <string name="click_here_promo">Discount code has been applied, click here to view the updated breakup</string>
+    <string name="applyZeroCancellation">Yes, I want to add Zero Cancellation</string>
+    <string name="removeZeroCancellation">No, I don\'t want Zero Cancellation</string>
+    <string name="buy_zero_cancellation_text">Buy zero cancellation at Rs 250</string>
+    <string name="additional_benefits_text">Before you go for the payment, we would like to suggest you for following benefits to avail</string>
+    <string name="zero_cancellation_text">Zero Cancellation</string>
+    <string name="insure_your_trip_text">Insure your trip</string>
+    <string name="visa_text">VISA</string>
+    <string name="promocode_removed">Promocode successfully removed ! click here to see the updated Fare Breakup.</string>
+
+    <string name="send_gst_details">I want to send GST Details</string>
+    <string name="enter_gst_details">Fill G.S.T. Details</string>
+    <string name="company_name">Company Name</string>
+    <string name="gst_no">G.S.T. Number</string>
+    <string name="billing_phone">Billing Phone</string>
+    <string name="address">Address</string>
+    <string name="title_string">Title</string>
+    <string name="frequent_flyer_string">Frequent Flyer</string>
+    <string name="ff_airline_string">Airline</string>
+    <string name="ff_number_string">Frequent Flyer Number</string>
+    <string name="search_gst_company_name">Enter Company Name</string>
+    <string name="search_gst_no">Enter GST Number</string>
+    <string name="apply">Apply</string>
+    <string name="review_gst">Review G.S.T. Details</string>
+    <string name="text_ecash_balance">ECash Balance</string>
+    <string name="text_pendingBalance">Pending Amount</string>
+    <string name="payment_option">Payment Option</string>
+    <string name="remarksBeforePayment">You will be able to review the final price, Apply PROMO Codes (if any) on next screen</string>
+    <string name="cash_limit_text">(Max Ecash can be used: </string>
+    <string name="proceed_to_booking_text">Proceed to Booking</string>
+    <string name="error_length_first_name">First Name should contain atleast 2 characters</string>
+    <string name="error_length_last_name">Last Name should contain atleast 2 characters</string>
+    <string name="password_validation_text">Minimum 6 characters with 1 number and 1 alphabet</string>
+    <!--<string name="freshchat_file_provider_authority">com.rezofy.provider</string>-->
+
+</resources>

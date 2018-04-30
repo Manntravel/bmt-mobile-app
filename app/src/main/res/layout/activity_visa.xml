@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/busvoucherbg">
+        <include
+            layout="@layout/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/titleHeader"
+
+
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleHeader">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="7dp"
+                        app:cardElevation="0dp"
+
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/visa_bg"
+                                    android:adjustViewBounds="true"
+
+
+                                    android:id="@+id/tvOne" />
+
+                                <TextView
+                                    android:text="H2-A Visa"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tvPnr"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginLeft="24dp"
+                                    android:layout_marginStart="24dp"
+                                    android:layout_marginTop="20dp"
+                                    android:id="@+id/tvVisaName"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:text="United States"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tvVisaName"
+                                    android:layout_alignLeft="@+id/tvVisaName"
+                                    android:layout_alignStart="@+id/tvVisaName"
+                                    android:layout_marginTop="5dp"
+                                    android:id="@+id/tvCountry"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    />
+
+
+                            </RelativeLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:orientation="vertical"
+                                android:background="@color/white">
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:paddingRight="@dimen/padding_10"
+                                    android:paddingLeft="@dimen/padding_10"
+                                    >
+
+                                    <TextView
+                                        android:text="@string/traveller_name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView16"
+                                        android:textColor="@color/transparent_color"/>
+
+                                    <TextView
+                                        android:text="TRN03456"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView15"
+                                        android:layout_alignParentRight="true"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"/>
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingRight="@dimen/padding_10"
+                                    android:paddingLeft="@dimen/padding_10"
+                                    >
+
+                                    <TextView
+                                        android:text="Vivek Sanghi"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/tvOneBoardingPoint"
+                                        android:textColor="@color/black"/>
+
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:paddingRight="@dimen/padding_10"
+                                    android:paddingLeft="@dimen/padding_10">
+
+                                    <TextView
+                                        android:text="@string/visa_number"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView23"
+                                        android:textColor="@color/transparent_color"/>
+
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingRight="@dimen/padding_10"
+                                    android:paddingLeft="@dimen/padding_10">
+
+                                    <TextView
+                                        android:text="AS23W427E"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/tvVisaNo"
+                                        android:textColor="@color/black"/>
+
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="20dp"
+                                    android:paddingRight="@dimen/padding_10"
+                                    android:paddingLeft="@dimen/padding_10">
+
+                                    <TextView
+                                        android:text="@string/passport_no"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView29"
+                                        android:textColor="@color/transparent_color"
+                                        android:textAllCaps="true"
+                                       />
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingRight="@dimen/padding_10"
+                                    android:paddingLeft="@dimen/padding_10">
+
+                                    <TextView
+                                        android:text="PP12345678"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/tvPassportNo"
+                                        android:textColor="@color/black"/>
+                                </RelativeLayout>
+                              <View
+                                  android:layout_width="match_parent"
+                                  android:layout_height="1dp"
+                                  android:background="@color/seperator_bg"
+                                  android:layout_marginTop="20dp"
+                                  android:layout_marginBottom="20dp"
+                                  />
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingRight="@dimen/padding_10"
+                                    android:paddingLeft="@dimen/padding_10"
+                                    android:layout_marginBottom="15dp"
+                                    >
+                                    <TextView
+                                        android:text="@string/fees"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/tvFees"
+                                        android:textColor="@color/header_color"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold"/>
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_passenger"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="7dp"
+                        app:cardElevation="0dp"
+                        android:layout_marginTop="20dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:text="@string/view"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvView"
+                                android:textColor="@color/black"
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:textSize="20sp"
+                                android:onClick="showMessage"
+                                />
+
+
+                            <TextView
+                                android:text="@string/download"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tvDownload"
+                                android:textColor="@color/black"
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:textSize="20sp"
+                                android:onClick="showMessage"
+                                />
+
+
+                        </LinearLayout>
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"></View>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+        <com.rezofy.utils.RoundedImageView
+            android:id="@+id/btn_flaoting"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/chat_img"
+            android:scaleType="fitXY"
+            />
+    </RelativeLayout>
+    <!-- bottom sheet layout -->
+
+</android.support.design.widget.CoordinatorLayout>

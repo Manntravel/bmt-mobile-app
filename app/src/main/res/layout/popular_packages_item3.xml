@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popular_packages_root"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/iv_header"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/tv_place_name_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:text="AUSTRALIA"
+        android:textStyle="bold"
+        android:textSize="48sp"
+        android:textColor="@color/black_op30"
+        android:textAllCaps="true"
+        android:background="@color/black_op00"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="100"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_place_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="60"
+                android:gravity="center"
+                android:background="@color/blue_first">
+
+                <TextView
+                    android:id="@+id/tv_place_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="united kingdom"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textAllCaps="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_price"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40"
+                android:gravity="center"
+                android:background="@color/black">
+
+                <TextView
+                    android:id="@+id/tv_starting_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/starting_from"
+                    android:textColor="@color/white"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_starting_from"
+                    android:layout_centerHorizontal="true"
+                    android:text="124000"
+                    android:textColor="@color/white"
+                    android:textAllCaps="true"
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</RelativeLayout>

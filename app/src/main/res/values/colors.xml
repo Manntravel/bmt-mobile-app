@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="progress_bg">#8C000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>//#4963F7
+    <color name="fb_btn_bg_color">#4963F7</color>
+    <color name="gplus_btn_bg_color">#E53D2B</color>
+
+    <color name="login_getstart__background_color">#10000000</color>
+    <color name="login_getstart__background_corner_color">#FFFFFF</color>
+    <color name="password_background_color">#31455A</color>
+    <color name="password_background_corner_color">#10000000</color>
+    <color name="username_background_color">#80a6a6a6</color>
+    <color name="username_background_corner_color">#10000000</color>
+    <color name="bg_color_search">#F36F29</color>
+    <color name="bg_color_search_press">#FF4500</color>
+    <color name="blue_first">#0256B7</color>
+    <color name="blue_second">#1976D2</color>
+    <color name="blue_third">#1E90FF</color>
+    <color name="red_first">#D50202</color>
+    <color name="upper_rl_home_color">#1E88E5</color>
+    <color name="white_color">#B1D8DC</color>
+    <color name="indicator_color">#FFFFFF</color>
+
+    <!-- Dialog color-->
+    <color name="home_selector">#4269A5</color>
+    <color name="grey_first">#9C9C9C</color>
+    <color name="grey_second">#A4A4A4</color>
+    <color name="fruntflightfragment_color">#00DDFF</color>
+    <color name="left_icon_selector_color">#698EC4</color>
+    <!-- search place  color-->
+    <color name="country_color">#6F6F6F</color>
+    <color name="airport_color">#9B9B9B</color>
+    <color name="airport_color1">#F2F2F2</color>
+    <color name="hint_place_color">#FFFFFF</color>
+    <color name="row_place_selector_color">#B7B7B7</color>
+    <color name="payment_gateWay_bg_color">#b5b5b5</color>
+
+    <!--Flights Search Activity colors-->
+    <color name="blackLight">#88000000</color>
+    <color name="blackBorder">#28000000</color>
+    <color name="common_text_color">#1E88E5</color>
+    <color name="blackDark">#000000</color>
+    <color name="colorbackground">#220288D1</color>
+    <color name="colorPrimarydate">#1E88E5</color>
+    <color name="bottom_calender_color">#EEEEEE</color>
+    <color name="calender_header_color">#E1E1E1</color>
+    <color name="selected_flight">#D5EAFF</color>
+    <color name="top_bgcolor">#f3f3f3</color>
+    <color name="light_gray">#b5b5b5</color>
+    <color name="passenger_text_color">#c4c4c4</color>
+    <color name="hint_color">#c4c4c4</color>
+    <color name="orange">#f36f25</color>
+    <color name="previouse_color">#dbdbdb</color>
+    <color name="next_passenger_color">#f3f3f3</color>
+    <color name="category_unselected_color">#91CAFA</color>
+    <color name="bg_color_payment_book">#F36F27</color>
+    <color name="payment_rl_color">#EDEDED</color>
+    <color name="tv_payment_text_color">#F2F2F2</color>
+    <color name="v_border_color">#E2E2E2</color>
+    <color name="payment_selector">#DEEEFF</color>
+    <color name="spinner_row_color">#E4E4E4</color>
+    <color name="ticket_and_flight_color">#ababab</color>
+    <color name="transparent_color">#80000000</color>
+    <color name="header_color">#1C89E4</color>
+    <color name="dark_blue">#FF1947D2</color>
+    <color name="child_color">#f5f5f5</color>
+
+    <!--Filter Activity colors-->
+    <color name="filter_header_bg">#EBEBEB</color>
+    <color name="filter_button_bg1">#FFFFFF</color>
+    <color name="filter_button_bg2">#F76B00</color>
+    <color name="filter_button_textCollor1">#000000</color>
+    <color name="filter_button_textCollor2">#ffffff</color>
+    <color name="filter_time_slot_below_color">#9d9d9d</color>
+    <color name="filter_screen_selection_color">#989898</color>
+    <color name="color_mytrip_list_pay_bt">#f08c65</color>
+    <color name="bg_billing_detail">#ebeff0</color>
+    <color name="cancel_stay_color">#333333</color>
+    <color name="pay_for_stay_color">#f06e29</color>
+    <color name="busvoucherbg">#ebebeb</color>
+    <color name="triplist_bg">#ededed</color>
+    <color name="seperator_bg">#cccccc</color>
+
+    <!--Popular Packages colors-->
+    <color name="yellow_FFFF00">#FFFF00</color>
+    <color name="yellow_ffc600">#ffc600</color>
+    <color name="black_op00">#00000000</color>f
+    <color name="black_op30">#4D000000</color>
+    <color name="black_op70">#B3000000</color>
+
+    <!--Country Packages colors-->
+    <color name="black_383838">#383838</color>
+    <color name="white_e3e9e9">#e3e9e9</color>
+    <color name="gray_a9a9a9">#a9a9a9</color>
+
+    <!--ENQUIRY colors-->
+    <color name="gray_eeeeee">#eeeeee</color>
+    <color name="gray_bababa">#bababa</color>
+    <color name="gray_c7c7c7">#c7c7c7</color>
+    <color name="gray_e6e6e6">#e6e6e6</color>
+    <color name="gray_c4c4c4">#c4c4c4</color>
+    <color name="gray_A5A3A4">#A5A3A4</color>
+    <color name="gray_efefef">#efefef</color>
+
+    <!--TripBoxFragment-->
+    <color name="white_op60">#99ffffff</color>
+    <color name="white_op70">#B3ffffff</color>
+    <color name="black_op80">#CC000000</color>
+    <color name="black_op60">#99000000</color>
+    <color name="transparent_gray">#ccbababa</color>
+
+
+</resources>

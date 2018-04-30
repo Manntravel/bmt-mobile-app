@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="com.github.freshdesk:hotline-android-1.0.15">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/hotline-android-1.0.15.aar/2ee06f0f85fb427cdd17d14443bba30b/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/hotline-android-1.0.15.aar/2ee06f0f85fb427cdd17d14443bba30b/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/hotline-android-1.0.15.aar/2ee06f0f85fb427cdd17d14443bba30b/jars/libs/hotline.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

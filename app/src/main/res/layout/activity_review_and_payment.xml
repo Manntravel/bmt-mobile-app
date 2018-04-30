@@ -1,0 +1,1734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/flight_details_first_way"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/header"
+                    android:background="@color/top_bgcolor"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/place_first_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Delhi - Mumbai"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/place_size" />
+
+                    <com.rezofy.views.custom_views.IconTextView
+                        android:id="@+id/icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/place_first_way"
+                        android:layout_alignTop="@+id/place_first_way"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/place_first_way"
+                        android:gravity="center"
+                        android:text="@string/icon_text_x"
+                        android:textColor="@color/black" />
+
+
+                    <TextView
+                        android:id="@+id/departure_date_first_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/place_first_way"
+                        android:layout_marginTop="5dp"
+                        android:text="Sat,21 NOV"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/date_size" />
+
+
+                    <TextView
+                        android:id="@+id/duration_first_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="2h 20m"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/time_size" />
+
+
+                    <TextView
+                        android:id="@+id/flight_type_first_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/departure_date_first_way"
+                        android:text="Non Stop"
+                        android:textColor="@color/light_gray"
+                        android:textSize="@dimen/time_size" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/flight_details_second_way"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/top_bgcolor"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/place_second_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Delhi - Mumbai"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/place_size" />
+
+                    <com.rezofy.views.custom_views.IconTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/place_second_way"
+                        android:layout_alignTop="@+id/place_second_way"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/place_second_way"
+                        android:gravity="center"
+                        android:text="@string/icon_text_J"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/departure_date_second_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/place_second_way"
+                        android:layout_marginTop="5dp"
+                        android:text="Sat,21 NOV"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/date_size" />
+
+
+                    <TextView
+                        android:id="@+id/duration_second_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="2h 20m"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/time_size" />
+
+                    <TextView
+                        android:id="@+id/flight_type_second_way"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/departure_date_second_way"
+                        android:text="Non Stop"
+                        android:textColor="@color/light_gray"
+                        android:textSize="@dimen/time_size" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_flight_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/top_bgcolor"
+                    android:gravity="right"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/text_details"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.4"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_travellers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Travellers"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/place_size" />
+
+                        <TextView
+                            android:id="@+id/tv_review_adults_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="1 Adult"
+                            android:textColor="@color/grey_first"
+                            android:textSize="@dimen/date_size" />
+
+                        <TextView
+                            android:id="@+id/tv_click_to_see_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:gravity="right"
+                            android:text="@string/text_click_to_see_details"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_totalamount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="Total Amount"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/place_size" />
+
+                        <TextView
+                            android:id="@+id/fare"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:gravity="right"
+                            android:text="8,500"
+                            android:textColor="@color/light_gray"
+                            android:textSize="@dimen/date_size" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/v_border_color"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_contact_info_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact information"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_contact_msg_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/your_ticket"
+                        android:textColor="@color/grey_first"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="5dp">
+
+                    <EditText
+                        android:id="@+id/edit_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bottom_line_review"
+                        android:gravity="left"
+                        android:hint="@string/email_id"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey_second"
+                        android:textCursorDrawable="@null"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/isd_code"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edit_email"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bottom_line_review"
+                        android:gravity="left"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:text="@string/plus_91"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey_second"
+                        android:textCursorDrawable="@null"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edit_mobilenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edit_email"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/isd_code"
+                        android:background="@drawable/bottom_line_review"
+                        android:gravity="left"
+                        android:hint="@string/hint_mobile"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey_second"
+                        android:textCursorDrawable="@null"
+                        android:textSize="18sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/icon_checkfirst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/isd_code"
+                        android:layout_marginTop="@dimen/padding_10"
+                        android:checked="true"
+                        android:paddingBottom="-5dp"
+                        android:text="@string/agreed"
+                        android:textColor="@color/hint_color" />
+
+                    <TextView
+                        android:id="@+id/tv_term_condition_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/icon_checkfirst"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="-5dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/term_text"
+                        android:textColor="@color/upper_rl_home_color"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/send_sms_email_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_term_condition_text"
+                        android:layout_marginTop="10dp"
+                        android:button="@drawable/abc_btn_check_material"
+                        android:checked="true"
+                        android:text="@string/send_sms_email"
+                        android:textColor="@color/black" />
+
+                    <CheckBox
+                        android:id="@+id/addGstDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/send_sms_email_info"
+                        android:layout_marginTop="10dp"
+                        android:button="@drawable/abc_btn_check_material"
+                        android:checked="false"
+                        android:text="@string/send_gst_details"
+                        android:textColor="@color/black"
+                        android:theme="@style/Theme.AppCompat.CheckBoxStyle" />
+
+                    <CheckBox
+                        android:id="@+id/icon_checksecond"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addGstDetails"
+                        android:layout_marginTop="10dp"
+                        android:checked="false"
+                        android:text="@string/auto_ticket"
+                        android:textColor="@color/hint_color" />
+
+                    <!--<TextView
+                        android:id="@+id/byZeroCancellation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/icon_checksecond"
+                        android:layout_marginTop="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/buy_zero_cancellation_text"
+                        android:textSize="16sp" />
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/byZeroCancellation"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/applyZeroCancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="Yes" />
+
+                        <RadioButton
+                            android:id="@+id/removeZeroCancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="No" />
+
+                    </RadioGroup>-->
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/gst_l_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/place_padding"
+                    android:layout_marginRight="@dimen/place_padding"
+                    android:background="@color/v_border_color" />
+
+                <LinearLayout
+                    android:id="@+id/gstDetailsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/enter_gst_details"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/place_padding"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="80">
+
+                        <EditText
+                            android:id="@+id/company_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:background="@drawable/bottom_line"
+                            android:digits="@string/alphabets"
+                            android:hint="@string/company_name"
+                            android:inputType="textCapWords|text"
+                            android:paddingLeft="@dimen/padding_2"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/hint_color"
+                            android:textCursorDrawable="@drawable/cursor_color" />
+
+                        <com.rezofy.views.custom_views.IconTextView
+                            android:id="@+id/CompanyNameClick"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="10"
+                            android:gravity="center"
+                            android:text="@string/icon_text_v"
+                            android:textColor="@color/red_first"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/place_padding"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="80">
+
+                        <EditText
+                            android:id="@+id/gst_no"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="70"
+                            android:background="@drawable/bottom_line"
+                            android:hint="@string/gst_no"
+                            android:inputType="textCapWords|text"
+                            android:paddingLeft="@dimen/padding_2"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/hint_color"
+                            android:textCursorDrawable="@drawable/cursor_color" />
+
+                        <com.rezofy.views.custom_views.IconTextView
+                            android:id="@+id/GstNoClick"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="10"
+                            android:gravity="center"
+                            android:text="@string/icon_text_v"
+                            android:textColor="@color/red_first"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/billing_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/place_padding"
+                        android:layout_marginRight="@dimen/place_padding"
+                        android:background="@drawable/bottom_line"
+                        android:hint="@string/billing_phone"
+                        android:inputType="textCapWords|text"
+                        android:paddingLeft="@dimen/padding_2"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/hint_color"
+                        android:textCursorDrawable="@drawable/cursor_color" />
+
+                    <EditText
+                        android:id="@+id/email_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/place_padding"
+                        android:layout_marginRight="@dimen/place_padding"
+                        android:background="@drawable/bottom_line"
+                        android:hint="@string/email_id"
+                        android:inputType="textCapWords|text"
+                        android:paddingLeft="@dimen/padding_2"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/hint_color"
+                        android:textCursorDrawable="@drawable/cursor_color" />
+
+                    <LinearLayout
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/place_padding"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/spinner_selector"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:weightSum="80">
+
+                        <Spinner
+                            android:id="@+id/country_spinner"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center"
+                            android:layout_weight="70"
+                            android:background="@null"
+                            android:dropDownWidth="220dp"
+                            android:popupBackground="@color/spinner_row_color"
+                            android:spinnerMode="dropdown" />
+
+                        <com.rezofy.views.custom_views.IconTextView
+                            android:id="@+id/countrySpinnerClick"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="10"
+                            android:gravity="center"
+                            android:text="@string/icon_text_1"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/state_layout"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/place_padding"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/spinner_selector"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:weightSum="80">
+
+                        <Spinner
+                            android:id="@+id/state_spinner"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center"
+                            android:layout_weight="70"
+                            android:background="@null"
+                            android:dropDownWidth="220dp"
+                            android:popupBackground="@color/spinner_row_color"
+                            android:spinnerMode="dropdown" />
+
+                        <com.rezofy.views.custom_views.IconTextView
+                            android:id="@+id/stateSpinnerClick"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="10"
+                            android:gravity="center"
+                            android:text="@string/icon_text_1"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!--<LinearLayout
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/place_padding"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/spinner_selector"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:weightSum="80">
+
+                        <Spinner
+                        android:id="@+id/city_spinner"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center"
+                        android:layout_weight="70"
+                        android:background="@null"
+                        android:dropDownWidth="220dp"
+                        android:popupBackground="@color/spinner_row_color"
+                        android:spinnerMode="dropdown" />
+
+                        <com.rezofy.views.custom_views.IconTextView
+                            android:id="@+id/citySpinnerClick"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="10"
+                            android:gravity="center"
+                            android:text="@string/icon_text_1"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>-->
+
+                    <EditText
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/place_padding"
+                        android:layout_marginRight="@dimen/place_padding"
+                        android:background="@drawable/bottom_line"
+                        android:hint="@string/city_name"
+                        android:inputType="textCapWords|text"
+                        android:paddingLeft="@dimen/padding_2"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/hint_color"
+                        android:textCursorDrawable="@drawable/cursor_color" />
+
+                    <EditText
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/place_padding"
+                        android:layout_marginRight="@dimen/place_padding"
+                        android:background="@drawable/bottom_line"
+                        android:hint="@string/address"
+                        android:inputType="textCapWords|text"
+                        android:paddingLeft="@dimen/padding_2"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/hint_color"
+                        android:textCursorDrawable="@drawable/cursor_color" />
+
+                    <EditText
+                        android:id="@+id/pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/place_padding"
+                        android:layout_marginRight="@dimen/place_padding"
+                        android:background="@drawable/bottom_line"
+                        android:hint="@string/pincode"
+                        android:inputType="textCapWords|text"
+                        android:paddingLeft="@dimen/padding_2"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/hint_color"
+                        android:textCursorDrawable="@drawable/cursor_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/gstSubmit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/bg_payment_book"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:paddingTop="5dp"
+                                android:text="SUBMIT"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/gstReset"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginRight="30dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/bg_payment_book"
+                                android:layout_gravity="center"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:paddingTop="5dp"
+                                android:text="RESET"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/gds_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/place_padding"
+                    android:layout_marginRight="@dimen/place_padding"
+                    android:background="@color/v_border_color" />
+
+                <TextView
+                    android:id="@+id/tvPayNow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:layout_marginRight="@dimen/padding_10"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/pay_now"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvPayNowRemarks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/remarksBeforePayment"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_break_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="left"
+                    android:paddingRight="10dp"
+                    android:text="@string/fare_break_up"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvTaxes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="left"
+                    android:paddingRight="10dp"
+                    android:text="@string/taxes"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/promocode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/have_a_promocode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:text="@string/have_promocode"
+                        android:textColor="@color/upper_rl_home_color"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_enter_promo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/enter_promocode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="18dp"
+                            android:background="@drawable/edittext_bg_shape_rect_light_border"
+                            android:hint="Enter Promocode"
+                            android:inputType="text"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="#CDCDCD" />
+
+                        <TextView
+                            android:id="@+id/apply_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/enter_promocode"
+                            android:background="@android:color/holo_blue_dark"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/apply"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/remove_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/apply_button"
+                            android:background="@android:color/holo_blue_dark"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/remove"
+                            android:textColor="@color/white"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_promo_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_enter_promo"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/no_promocode"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textSize="13sp"
+                        android:visibility="gone" />
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/ll_enter_promo"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@android:color/holo_blue_dark"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_additional_benefits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_additional_options"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="left"
+                        android:paddingRight="10dp"
+                        android:text="@string/additional_benefits_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_zero_cancellation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_10"
+                        android:layout_marginTop="@dimen/padding_10">
+
+                        <CheckBox
+                            android:id="@+id/cb_zero_cancellation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:paddingBottom="-5dp"
+                            android:text="@string/zero_cancellation_text"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <com.rezofy.views.custom_views.IconTextView
+                            android:id="@+id/zero_cancel_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@id/cb_zero_cancellation"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/margin_5dp"
+                            android:singleLine="true"
+                            android:text="@string/icon_text_info"
+                            android:textColor="@color/hint_color"
+                            android:textSize="20sp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_zro_cancel_remarks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cb_zero_cancellation"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="-5dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/term_text"
+                        android:textColor="@color/hint_color"
+                        android:textSize="14sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_visa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_10"
+                        android:layout_marginTop="@dimen/padding_10">
+
+                        <CheckBox
+                            android:id="@+id/cb_visa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:paddingBottom="-5dp"
+                            android:text="@string/visa_text"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <com.rezofy.views.custom_views.IconTextView
+                            android:id="@+id/visa_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@id/cb_visa"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/margin_5dp"
+                            android:singleLine="true"
+                            android:text="@string/icon_text_info"
+                            android:textColor="@color/hint_color"
+                            android:textSize="20sp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_visa_remarks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cb_visa"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="-5dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/term_text"
+                        android:textColor="@color/hint_color"
+                        android:textSize="14sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_insurance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_10"
+                        android:layout_marginTop="@dimen/padding_10">
+
+                        <CheckBox
+                            android:id="@+id/cb_insure_your_trip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:paddingBottom="-5dp"
+                            android:text="@string/insure_your_trip_text"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <com.rezofy.views.custom_views.IconTextView
+                            android:id="@+id/insure_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@id/cb_insure_your_trip"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/margin_5dp"
+                            android:singleLine="true"
+                            android:text="@string/icon_text_info"
+                            android:textColor="@color/hint_color"
+                            android:textSize="20sp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/insure_remarks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cb_insure_your_trip"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="-5dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/term_text"
+                        android:textColor="@color/hint_color"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvProceedToBooking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:layout_marginRight="@dimen/padding_10"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/proceed_to_booking_text"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_payment_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/v_border_color"
+                        android:gravity="left"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/payment_option"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/convineieceFeeeTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="7dp"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/convenience_fees_is"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_paymenticon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_credit_card"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@drawable/pamenterelativeselector"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <com.rezofy.views.custom_views.IconTextView
+                                android:id="@+id/icon_credit_card"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:text="@string/icon_text_Y"
+                                android:textColor="@color/colorPrimarydate"
+                                android:textSize="50sp" />
+
+                            <TextView
+                                android:id="@+id/credit_card_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/icon_credit_card"
+                                android:gravity="center_horizontal"
+                                android:text="@string/credit_card_text"
+                                android:textColor="@color/black" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_cash_card"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@drawable/pamenterelativeselector"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <com.rezofy.views.custom_views.IconTextView
+                                android:id="@+id/icon_cash_card"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:text="@string/icon_text_0"
+                                android:textColor="@color/colorPrimarydate"
+                                android:textSize="50sp" />
+
+                            <TextView
+                                android:id="@+id/cash_card_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/icon_cash_card"
+                                android:gravity="center_horizontal"
+                                android:text="@string/cash_card_text"
+                                android:textColor="@color/black" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_creditlimit"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@drawable/pamenterelativeselector"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <com.rezofy.views.custom_views.IconTextView
+                                android:id="@+id/icon_credit_limit"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:text="@string/icon_text_W"
+                                android:textColor="@color/colorPrimarydate"
+                                android:textSize="50sp" />
+
+                            <TextView
+                                android:id="@+id/credit_limit_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/icon_credit_limit"
+                                android:gravity="center_horizontal"
+                                android:text="@string/credit_limit_text"
+                                android:textColor="@color/black" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/z_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="@dimen/place_padding"
+                    android:layout_marginRight="@dimen/place_padding"
+                    android:visibility="gone"
+                    android:background="@color/v_border_color" />
+
+                <View
+                    android:id="@+id/v_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="@dimen/place_padding"
+                    android:layout_marginRight="@dimen/place_padding"
+                    android:background="@color/v_border_color" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/ll_cash_limit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cash Balance"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_cash_limit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="288,05.18"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/v_border_color" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_first"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_cash_limit"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_permlimits"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Perm Credit Limit"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="288,05.18"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/v_border_color" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_second"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_first"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_booking_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Booking Amount"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_booking_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="5,787"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/v_border_color" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_rem_perm_cash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_second"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Remaining Cash Balance"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_rem_perm_cash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="288,05.18"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/v_border_color" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_rem_perm_credit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_rem_perm_cash"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_perm_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Remaining Perm Credit"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_perm_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="288,05.18"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/v_border_color" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_rem_perm_credit"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_book"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/book"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_payment_book"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="80dp"
+                        android:paddingRight="80dp"
+                        android:paddingTop="5dp"
+                        android:text="Book"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_cardgrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/place_padding"
+                    android:paddingRight="@dimen/place_padding"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:id="@+id/gateway_girdLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/submitBtnGateway"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/gateway_girdLayout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_payment_book"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="5dp"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_cash_card_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/place_padding"
+                    android:paddingRight="@dimen/place_padding"
+                    android:visibility="gone">
+
+
+                    <EditText
+                        android:id="@+id/card_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/edittext_bg_shape_rect_light_border"
+                        android:hint="Card Number"
+                        android:inputType="number"
+                        android:minEms="15"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#CDCDCD" />
+
+                    <EditText
+                        android:id="@+id/card_pin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_number"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/edittext_bg_shape_rect_light_border"
+                        android:hint="pin"
+                        android:inputType="numberPassword"
+                        android:minEms="15"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#CDCDCD" />
+
+                    <TextView
+                        android:id="@+id/check_balance_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_pin"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_payment_book"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="5dp"
+                        android:text=" Check Balance "
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_cash_card_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/place_padding"
+                    android:paddingRight="@dimen/place_padding"
+                    android:visibility="gone">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cash Card Balance"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_cash_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="288,05.18"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/v_border_color" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Booking Amount"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_booking_amount_cashcard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="288,05.18"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/v_border_color" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Balance after Payment"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_cash_card_balance_after_deduction"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="5,787"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/v_border_color" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_book_fromCasCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/book_from_cashCard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_payment_book"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="80dp"
+                            android:paddingRight="80dp"
+                            android:paddingTop="5dp"
+                            android:text="Book"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <com.rezofy.utils.RoundedImageView
+        android:id="@+id/btn_flaoting"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|start"
+        android:background="@drawable/chat_img"
+        android:scaleType="fitXY" />
+
+</FrameLayout>

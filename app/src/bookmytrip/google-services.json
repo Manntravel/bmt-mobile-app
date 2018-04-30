@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "272737132628",
+    "firebase_url": "https://book-my-trip-143306.firebaseio.com",
+    "project_id": "book-my-trip-143306",
+    "storage_bucket": "book-my-trip-143306.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272737132628:android:ebfeb0f3efb0a00f",
+        "android_client_info": {
+          "package_name": "com.bookmytrip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "272737132628-rcaqif321q5njgtpttk4i5aqhq5ss3rq.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "272737132628-g5b5d83odck7igb9sj8cbnlmt603ft9l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bookmytrip",
+            "certificate_hash": "7925e74f329d988bb23425bb8cebb9287f8aa5f0"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTNX1rNnRlkCX35h3G6_ZlMcZ0XdP46Co"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "272737132628-rcaqif321q5njgtpttk4i5aqhq5ss3rq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "272737132628-nk6gul2gbb4mqhrnl41tgs7fdpq3ql83.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.bookmytrip"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

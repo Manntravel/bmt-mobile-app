@@ -1,0 +1,10 @@
+
+<layer-list
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:drawable="@drawable/shadow_btn"/>
+<item
+    android:drawable="@drawable/round_btn"
+    android:bottom="2dp" />
+
+</layer-list>
